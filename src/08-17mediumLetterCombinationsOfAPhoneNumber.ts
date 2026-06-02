@@ -1,4 +1,4 @@
-function letterCombinations(digits: string): string[] {
+export function letterCombinations(digits: string): string[] {
     if (digits.length === 0) return [];
 
     const phoneMap: { [key: string]: string } = {
@@ -32,8 +32,4 @@ function letterCombinations(digits: string): string[] {
     backtrack(0, "");
 
     return result;
-}
-
-
-console.log(letterCombinations("23")); 
-console.log(letterCombinations("2")); 
+} 

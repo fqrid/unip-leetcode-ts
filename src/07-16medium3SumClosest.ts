@@ -1,4 +1,4 @@
-function threeSumClosest(nums: number[], target: number): number {
+export function threeSumClosest(nums: number[], target: number): number {
     nums.sort((a, b) => a - b);
 
     let closestSum = nums[0] + nums[1] + nums[2];
@@ -27,8 +27,4 @@ function threeSumClosest(nums: number[], target: number): number {
     }
 
     return closestSum;
-}
-
-
-console.log(threeSumClosest([-1, 2, 1, -4], 1)); 
-console.log(threeSumClosest([0, 0, 0], 1)); 
+} 
