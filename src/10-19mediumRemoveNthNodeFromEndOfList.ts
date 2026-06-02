@@ -1,4 +1,4 @@
-class ListNode {
+export class ListNode {
     val: number;
     next: ListNode | null;
     constructor(val?: number, next?: ListNode | null) {
@@ -7,7 +7,7 @@ class ListNode {
     }
 }
 
-function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
+export function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     const dummy = new ListNode(0);
     dummy.next = head;
 
